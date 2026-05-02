@@ -1,33 +1,21 @@
-"use strict";
+'use strict';
 
-var zak = "Zak Ruvalcaba";
-var sally = "Sally Smith";
-var holly = "Holly Unlikely";
-var amol = "Amol Shookup";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var element = React.createElement(
-    "ul",
-    { style: { color: "blue", fontSize: "24px" } },
-    React.createElement(
-        "li",
-        null,
-        zak
-    ),
-    React.createElement(
-        "li",
-        null,
-        sally
-    ),
-    React.createElement(
-        "li",
-        null,
-        holly
-    ),
-    React.createElement(
-        "li",
-        null,
-        amol.toUpperCase()
-    )
-);
+var _react = require('react');
 
-ReactDOM.render(element, document.getElementById("content"));
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _EmployeeListJsx = require('./EmployeeList.jsx');
+
+var _EmployeeListJsx2 = _interopRequireDefault(_EmployeeListJsx);
+
+_reactDom2['default'].render(_react2['default'].createElement(
+  _react2['default'].StrictMode,
+  null,
+  _react2['default'].createElement(_EmployeeListJsx2['default'], null)
+), document.getElementById('content'));
